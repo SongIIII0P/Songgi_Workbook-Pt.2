@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    
+    <title>Sound01</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #hello {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /**font-weight: 200;**/
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    white-space: pre-line;
+    opacity: 1;
+}
+
+</style>
+
+<body>
+    <div id="hello"></div>
+    
+</body>
+
+<script>
+    const fullText = `Hello! 
+    Welcome to my left ear. 
+    You’re about to listen to my film.
+    And you’ll watch it too.
+    This was part of last semester’s WIST project, called "Words in Flight".
+    The theme is "Someone Is Watching You".
+    Yeah, I’m watching you.
+    And I guess… you’re watching me too, right? 
+    So… 
+    Wanna listen now? 
+    Then "Click" anywhere to start!`;
+
+    const hello = document.getElementById('hello');
+    let i = 0;
+    let speed = 50;
+
+    function typeWriter() {
+      if (i < fullText.length) {
+        hello.innerHTML += fullText.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+
+    document.addEventListener('click', () => {
+        document.getElementById("hello").style.opacity = "0";
+    });
+
+
+
+</script>
+
+<script src="/week06_sketch01/sound01.js" defer></script>
+</html>
