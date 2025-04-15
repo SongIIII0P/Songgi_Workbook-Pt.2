@@ -8,12 +8,12 @@ let ease = 0.05;
 
 
 function preload() {
-  fonts.push(loadFont('../data/Scribble.ttf'));
-  fonts.push(loadFont('../data/Edwan.ttf'));
-  fonts.push(loadFont('../data/Dot.otf'));
-  fonts.push(loadFont('../data/Song.ttf'));
-  fonts.push(loadFont('../data/Grand.ttf'));
-  fonts.push(loadFont('../data/mal.ttf'));
+  fonts.push(loadFont('data/Scribble.ttf'));
+  fonts.push(loadFont('data/Edwan.ttf'));
+  fonts.push(loadFont('data/Dot.otf'));
+  fonts.push(loadFont('data/Song.ttf'));
+  fonts.push(loadFont('data/Grand.ttf'));
+  fonts.push(loadFont('data/mal.ttf'));
 }
 
 function setup() {
