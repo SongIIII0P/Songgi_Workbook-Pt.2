@@ -3,8 +3,8 @@ let canvas;
 
 
 function preload(){
-  bottomImg=loadImage('./data/black.jpg');
-  topImg=loadImage('./data/colour.jpg');
+  bottomImg=loadImage('data/black.jpg');
+  topImg=loadImage('data/colour.jpg');
 }
 
 
