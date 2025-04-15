@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+
+  <title>Week06</title>
+</head>
+
+<style>
+  #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 0;
+    
+  }
+  .ear {
+    position: relative;
+    width: 220px;
+    z-index: 1;
+    overflow: hidden;
+    /* animation: vib 0.4s infinite; */
+  }
+
+  @keyframes vib {
+    0%   { transform: translate(0px, 0px); }
+    20%  { transform: translate(-5px, 1px); }
+    40%  { transform: translate(4px, -2px); }
+    60%  { transform: translate(-3px, 5px); }
+    80%  { transform: translate(2px, -1px); }
+    100% { transform: translate(0px, 0px); }
+}
+  #e01{
+    left: -1.7vw;
+    top: 51vh;
+  }
+
+  #e01:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6))
+            drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))
+            drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+  } 
+    
+  #e02 {
+    left: 74vw;
+    
+  }
+
+  #e02:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6))
+            drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))
+            drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+  } 
+
+
+
+  #click{
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    user-select: none;
+
+  }
+
+</style>
+
+<body>
+  
+
+  <a href="/week06_sketch01/sound01.html"><img src="/week06/data/ear.png" id="e01" class="ear"></a>
+  <a href="/week06/sound02.html"><img src="/week06/data/ear_right.png" id="e02" class="ear"></a>
+  <img src="/week06/data/noise.jpg" id="bg">
+  <div id="click">Click and Listen</div>
+  
+  
+</body>
+
+<script src="/week06/week06.js" defer></script>
+
+</html>
