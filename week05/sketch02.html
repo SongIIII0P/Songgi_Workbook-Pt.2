@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Sketch02</title>
+</head>
+
+<style>
+    p{
+        font-family: "Rubik Mono One", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+        position: relative;
+        top: 45vh;
+        text-align: center;
+        color: rgb(206, 200, 200);
+        opacity: 0.7;
+        user-select: none;
+        animation: colourChange 1s infinite;
+    }
+
+    @keyframes colourChange{
+        0%   { color: rgb(219, 215, 215); }
+        100% { color: rgb(255, 0, 0) }
+    }
+
+</style>
+
+<body>
+    <p>Drag to Erase</p>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script src="/week05/sketch02.js"></script>
+</html>

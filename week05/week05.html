@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <title>week05</title>
+</head>
+<style>
+    p{
+        font-family: "Rubik Mono One", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+        position: relative;
+        top: 20px;
+        text-align: center;
+        color: rgb(206, 200, 200);
+        animation: colourChange 1s infinite;
+    }
+
+    @keyframes colourChange{
+        0%   { color: rgb(206, 200, 200); }
+        100% { color: rgb(255, 0, 0) }
+    }
+
+
+
+
+    .sketch{
+        display: inline-block;
+        font-family: "Jersey 25", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 80px;
+        position: absolute;
+        top: 50vh;
+        color: rgb(255, 0, 0);
+        user-select: none;
+        
+    }
+    
+
+    #sk01{
+        left: 31vw;
+        transform: rotate(0.5deg)
+
+    }
+
+    #sk01 a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #sk01:hover{
+        color: rgb(0, 0, 0);
+        filter: drop-shadow(0 0 1px rgb(255, 0, 0))
+                drop-shadow(0 0 5px rgb(255, 0, 0))
+                drop-shadow(0 0 10px rgb(255, 0, 0));
+    }
+
+
+    #sk02{
+        left: 60vw;
+        transform: rotate(-0.5deg)
+
+    }
+
+    #sk02 a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #sk02:hover{
+        color: rgb(0, 0, 0);
+        filter: drop-shadow(0 0 5px rgb(255, 0, 0))
+                drop-shadow(0 0 10px rgb(255, 0, 0))
+                drop-shadow(0 0 20px rgb(255, 0, 0));
+    }
+
+    
+
+  
+
+</style>
+<body>
+
+    <p>Drag Mouse</p>
+    <div id="sk01" class="sketch"><a href="/week05/sketch01.html">Sketch01</a></div>
+    <div id="sk02" class="sketch"><a href="/week05/sketch02.html">Sketch02</a></div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script src="/week05/week05.js" defer></script>
+</html>
