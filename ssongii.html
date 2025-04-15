@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap" rel="stylesheet">
+    <title>SSongII's Second World</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    
+    }
+
+
+    .weekly{
+        position: absolute;
+        font-family: "Rubik Scribble", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 90px;
+        font-weight: 10;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    #week04{
+        position: relative;
+        display: inline-block;
+        top: 20px;
+        left: 0;
+        animation: move01 30s linear infinite;
+    
+    }
+
+    #week04 a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    
+    #week04:hover{
+        font-family: "Rubik Storm", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: red;
+    }
+
+
+    #week05{
+        position: relative;
+        display: inline-block;
+        top: 320px;
+        left: 78vw;
+        animation: move02 32s linear infinite;
+    }
+
+    #week05 a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #week05:hover{
+        font-family: "Rubik Storm", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: red;
+    }
+
+    #week06{
+        position: relative;
+        display: inline-block;
+        top: 600px;
+        left: 40vw;
+        animation: move03 36s linear infinite;
+    }
+
+    #week06 a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #week06:hover{
+        font-family: "Rubik Storm", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: red;
+    }
+    
+
+
+
+    @keyframes move01 {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(78vw); }
+        100% { transform: translateX(0); }
+    }
+
+    @keyframes move02 {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-78vw); }
+        100% { transform: translateX(0); }
+    }
+
+    @keyframes move03 {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(38vw); }
+        75% { transform: translateX(-40vw); }
+        100% { transform: translateX(0); }
+    }
+
+    
+
+    .fire img{
+        position: absolute;
+        z-index: 1;
+        mix-blend-mode: overlay;
+    
+    }
+
+    .fire img:hover {
+        filter: drop-shadow(0 0 5px rgb(255, 1, 1))
+                drop-shadow(0 0 10px rgb(255, 1, 1))
+                drop-shadow(0 0 20px rgb(255, 1, 1));
+    
+    }
+
+    
+
+    img{
+        width: 150px;
+    }
+
+    #fire01{
+        position: relative;
+        left: 10vw;
+    }
+
+    #fire02{
+        position: relative;
+        top: 20vh;
+        left: 23vw;
+    }
+
+    #fire03{
+        position: relative;
+        top: 35vh;
+        left: 50vw;
+    }
+
+    #fire04{
+        position: relative;
+        top: 70vh;
+        left: -15vw;
+    }
+
+    #fire05{
+        position: relative;
+        top: 80vh;
+        left: 45vw;
+    }
+
+    #fire06{
+        position: relative;
+        top: 9vh;
+        left: 10vw;
+    }
+
+   
+
+</style>
+
+<body>
+    <div class="weekly">
+        <div id="week04"><a href="week04/week04.html">WeeKo4</a></div>
+        <div id="week05"><a href="week05/week05.html">WeeKo5</a></div>
+        <div id="week06"><a href="week06/week06.html">WeeKo6</a></div>
+    </div>
+
+
+<div class="fire">
+    <a href="/inspiration.html"><img src="/home_img/fire03.gif" id="fire01"></a>
+    <a href="/inspiration.html"><img src="/home_img/fire03.gif" id="fire02"></a>
+    <a href="/inspiration.html"><img src="/home_img/fire03.gif" id="fire03"></a>
+    <a href="/inspiration.html"><img src="/home_img/fire03.gif" id="fire04"></a>
+    <a href="/inspiration.html"><img src="/home_img/fire03.gif" id="fire05"></a>
+    <a href="/inspiration.html"><img src="/home_img/fire03.gif" id="fire06"></a>
+   
+</div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script src="/sketch.js" defer></script>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirations & Studies</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirations</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 100vw;
+        height: auto;
+        background-color: red;
+    }
+
+    #click{
+        font-family: "Rubik Mono One", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        position: relative;
+        top: 50px;
+        text-align: center;
+        color: rgb(206, 200, 200);
+        animation: colourChange 1s infinite;
+    }
+
+    @keyframes colourChange{
+        0%   { color: rgb(206, 200, 200); }
+        100% { color: rgb(0, 0, 0) }
+    }
+
+
+    video{
+        width: 800px;
+        height: auto;
+        margin-bottom: 20px;
+        display: table-row;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 10px 20px rgb(255, 0, 0);
+        -webkit-mask-image: 
+            linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%),
+            linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
+        mask-image: 
+            linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%),
+            linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
+        -webkit-mask-composite: destination-in;
+        mask-composite: intersect;
+        transition: opacity 0.4s ease;
+        mix-blend-mode: saturation;
+    }
+
+    video:hover{
+        mix-blend-mode: normal;
+    }
+
+    .list-swipe {
+        position: relative;
+        top: 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+        scrollbar-width: auto;
+       
+    }
+
+    .list-swipe::-webkit-scrollbar {
+        height: 8px;
+        width: 10px;
+    }
+
+    .list-swipe::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+    }
+
+    .list-swipe::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .list {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 20px;
+        vertical-align: top;
+    }
+
+    .textbox {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        max-width: 500px;
+        text-align: left;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: auto;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 2em;
+        text-shadow:
+          1px 1px 0 #999,
+          2px 2px 0 #888,
+          3px 3px 0 #666,
+          4px 4px 0 #444;
+    } 
+
+    h3{
+        font-family:sans-serif;
+        color: rgb(255, 0, 0);
+        font-weight: 10;
+        font-size: 15px;
+        text-decoration: none;
+        margin-bottom: 7px;
+    
+    }
+
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    p{
+        font-size: 20px;
+        font-style: bold;
+        color: white;
+        text-shadow:
+        1px 1px 0 #999,
+        2px 2px 0 #888,
+        3px 3px 0 #666,
+        4px 4px 0 #444;
+        
+    }
+
+    #scroll{
+        font-family: "Rubik Mono One", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        color: rgb(206, 200, 200);
+        animation: colourChange 1s infinite;
+    }
+
+    @keyframes colourChange{
+        0%   { color: rgb(206, 200, 200); }
+        100% { color: rgb(0, 0, 0) }
+    }
+
+    
+</style>
+
+<body>
+
+    <div id="click">click the images<br></div>
+
+    <div class="list-swipe">
+        <div class="list" onclick="this.querySelector('.textbox').style.opacity=1">
+            <video autoplay loop muted src="/inspiration_img/01-1.mov"></video>
+            
+            <div class="textbox">
+                <h2>Patatap</h2>
+                <a href="https://www.patatap.com/"><h3>https://www.patatap.com/</h3></a>
+                <p>Typing A–Z triggers playful sounds and visuals, each perfectly in sync.
+                    Repeating keys creates fun variations <br>
+                    — it makes me feel like a DJ. 
+    
+                </p>
+           </div>
+        </div>
+        
+        <div class="list" onclick="this.querySelector('.textbox').style.opacity=1">
+            <video autoplay loop muted src="/inspiration_img/02.mov"></video>
+          
+            <div class="textbox" id="v02">
+                <h2>Curaturae</h2>
+                <a href="https://curaturae.com/"><h3>https://curaturae.com/</h3></a>
+                <p>As I type, unrelated images pop up randomly, reacting to key words. 
+                    It feels chaotic but clever! - making me search for meaning 
+                    between texts and the visuals.
+                </p>
+           </div>
+        </div>
+
+        <div class="list" onclick="this.querySelector('.textbox').style.opacity=1">
+            <video autoplay loop muted src="/inspiration_img/03.mov"></video>
+
+            <div class="textbox">
+                <h2> Schemas of Uncertainty</h2>
+                <a href="https://schemasofuncertainty.com/"><h3>https://schemasofuncertainty.com/</h3></a>
+                <p>Shifting layouts, draggable texts, and sideways scrolling <br>
+                    all reflect “uncertainty.” The constant text motion and red highlights 
+                    make the interaction feel unpredictable, bizzare,<br> yet oddly satisfying.
+                </p>
+           </div>
+        </div>
+
+        <div class="list" onclick="this.querySelector('.textbox').style.opacity=1">
+            <video autoplay loop muted src="/inspiration_img/04.mov"></video>
+           
+            <div class="textbox">
+                <h2> OpenProcessing 01</h2>
+                <a href="https://openprocessing.org/sketch/2545573"><h3>https://openprocessing.org/sketch/2545573</h3></a>
+                <p>Particle effect by Viola. 
+                    The particles bounce away from <br>the mouse in soft bursts.
+                    The interaction feels fluid, lively, <br>and responsive 
+                    - highly versatile and fun to play with.
+                </p>
+           </div>
+        </div>
+
+        <div class="list" onclick="this.querySelector('.textbox').style.opacity=1">
+            <video autoplay loop muted src="/inspiration_img/05.mov"></video>
+            
+            <div class="textbox">
+                <h2> OpenProcessing 02</h2>
+                <a href="https://openprocessing.org/sketch/2065470"><h3>https://openprocessing.org/sketch/2065470</h3></a>
+                <p> Organic particle sketch by Mascaria. 
+                    Particles shift in size and color like breathing cells — dreamy and rhythmic. 
+                    It evokes Kusama through its endless floating like her iconic dots.
+                </p>
+           </div>
+        </div>
+
+        <div class="list" onclick="this.querySelector('.textbox').style.opacity=1">
+            <video autoplay loop muted src="/inspiration_img/06.mov"></video>
+            
+            <div class="textbox">
+                <h2> OpenProcessing 03</h2>
+                <a href="https://openprocessing.org/sketch/1804218"><h3>https://openprocessing.org/sketch/1804218</h3></a>
+                <p> Webcam sketch by Piffle.
+                    Shapes appear with camera motion — bigger moves, more shapes.
+                    They slowly fade, making it feel like the web is watching and interacting with me.
+                </p>
+           </div>
+        </div>
+    </div>
+
+    <div id="scroll">◀︎ Swipe ▶︎</div>
+
+</body>
+<script>
+    //const scrollArea = document.querySelector('.list-swipe');
+    // scrollArea.addEventListener('wheel', (evt) => {
+     //  evt.preventDefault();
+     //  scrollArea.scrollLeft += evt.deltaY;
+   //  }, { passive: false });
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script src="/inspiration.js" defer></script>
+
+</html>
+</html>
