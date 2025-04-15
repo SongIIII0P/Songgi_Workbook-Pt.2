@@ -5,8 +5,8 @@ let fsize=300;
 let img;
 
 function preload(){
-font=loadFont("../data/Scribble.ttf");
-bg=loadImage("../data/bg01.jpg")
+font=loadFont("data/Scribble.ttf");
+bg=loadImage("data/bg01.jpg")
 }
 
 
